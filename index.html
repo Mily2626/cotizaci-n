@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cotizador de dolar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cotizador de Dólar</h1>
+        <p>Cotizaciones actualizadas y conversor de divisas</p>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>Cotizaciones</h2>
+            <div id="cotizaciones" class="contenedor-cotizaciones">
+                <p>Cargando cotizaciones...</p>
+            </div>
+        </section>
+
+        <section class="conversor">
+            <h2>Conversor de divisas</h2>
+            <label for="tipo-dolar">
+                Tipo de dólar:
+            </label>
+
+            <select id="tipo-dolar">
+
+                <option value="blue">
+                    Dólar Blue
+                </option>
+
+                <option value="oficial">
+                    Dólar Oficial
+                </option>
+
+                <option value="cripto">
+                    Dólar Cripto
+                </option>
+
+                <option value="bolsa">
+                    Dólar Bolsa
+                </option>
+
+            </select>
+
+
+            <label for="direccion">
+                Conversión:
+            </label>
+
+            <select id="direccion">
+
+                <option value="pesos-dolares">
+                    Pesos a Dólares
+                </option>
+
+                <option value="dolares-pesos">
+                    Dólares a Pesos
+                </option>
+
+            </select>
+
+
+            <label for="monto">
+                Monto:
+            </label>
+
+            <input
+                type="number"
+                id="monto"
+                placeholder="Ingresá un monto"
+            >
+
+
+            <button id="btn-convertir">
+                Convertir
+            </button>
+
+
+            <div id="resultado">
+
+                Resultado: -
+
+            </div>
+
+        </section>
+
+        <div id="estado">
+            Cargando información...
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
